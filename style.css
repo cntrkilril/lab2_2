@@ -5,32 +5,114 @@ body
     margin: 0;
     background-color: rgb(240, 235, 255);
     min-width: 320px;
+    display: grid;
+    grid-template-columns: 85% 15%;
+    grid-template-rows: auto auto;
 }
+
+
+/* хедер */
 .header
 {
     background-color: black;
-    height: 170px;
     color: rgb(240, 235, 255);
+    grid-column-start: span 2;
 }
-.header__heading__one
+.header__heading
 {
     background-color: black;
     padding-top: 1em;
     text-align: center;
     margin-top: 0%;
+    margin-bottom: 1em;
 }
 
-.header__heading__two
+
+
+/* футер */
+.footer
 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: white;
     background-color: black;
+}
+
+.footer__heading
+{
     padding-bottom: 1em;
     text-align: center;
-    margin-top: 0%;
+    margin: 0;
+}
+
+
+
+/* боковая панель */
+.aside
+{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-rows: 30em 30em;
+    grid-template-columns: 1em;
+    justify-content: start;
+}
+
+.soc__seti1
+{
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 0.5em;
+    font-weight: bold;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.soc__seti1:visited
+{
+    color: white;
+}
+
+.soc__seti1:hover
+{
+    background-color: white;
+    color: blue;
+}
+
+.soc__seti2
+{
+    text-decoration: none;
+    background-color: white;
+    color: orange;
+    padding: 0.5em;
+    font-weight: bold;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    
+}
+
+.soc__seti2:visited
+{
+    color: orange;
+}
+
+.soc__seti2:hover
+{
+    color: white;
+    background-color: orange;
+}
+
+.aside__item
+{
+    text-align: center;
+    width: 100%;
+    align-self: center;
 }
 
 
 /* блок 1 */
-.block1
+.block2
 {
     display: grid;
     grid-template-columns: 30% 20% 20% auto;
@@ -38,7 +120,7 @@ body
     grid-gap: 10px 10px;
     margin-left: 5%;
     padding: 1%;
-    width: 90%;
+    width: 88%;
     background-color: rgb(89, 97, 105);
     grid-auto-flow: row;
 }
@@ -47,7 +129,7 @@ body
 {
     text-align: center;
     width: 100%;
-    margin-top: 2em;
+    margin-top: 1em;
     display: block;
 }
 
@@ -72,22 +154,22 @@ body
     margin-bottom: 1.5em;
 }
 
-.item11
+.item21
 {
     align-self: start;
 }
 
-.item12
+.item22
 {
     align-self: center;
 }
 
-.item13
+.item23
 {
     align-self: end;
 }
 
-.item14
+.item24
 {
     align-self: stretch;
 }
@@ -95,7 +177,7 @@ body
 
 
 /* блок 2*/
-.block2
+.block3
 {
     display: grid;
     grid-template-columns: 25%;
@@ -103,8 +185,9 @@ body
     grid-gap: 10px 10px;
     margin-left: 5%;
     padding: 1%;
-    width: 90%;
+    width: 88%;
     background-color: rgb(89, 97, 105);
     grid-auto-flow: column;
     justify-content: center;
+    margin-bottom: 1em;
 }
